@@ -1,4 +1,4 @@
-# MyLibraryName
+# SwiftUI Theme Color Utils
 
 <!-- Header Logo -->
 
@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/badge/tvOS-15.0+-41465B.svg" />
     <img src="https://img.shields.io/badge/watchOS-8.0+-1FD67A.svg" />
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" />
-    <img src="https://github.com/CypherPoet/MyLibraryName/workflows/Build%20&%20Test/badge.svg" />
+    <img src="https://github.com/CypherPoet/SwiftUIThemeColorUtils/workflows/Build%20&%20Test/badge.svg" />
     <a href="https://github.com/apple/swift-package-manager">
       <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" />
     </a>
@@ -29,7 +29,7 @@
 
 <p align="center">
 
-_[[ A brief synopsis of this library ]]._
+_Utilities for structuring and using theme colors in SwiftUI applications._
 
 <p />
 
@@ -38,20 +38,20 @@ _[[ A brief synopsis of this library ]]._
 
 ### Xcode Projects
 
-Select `File` -> `Swift Packages` -> `Add Package Dependency` and enter `https://github.com/CypherPoet/MyLibraryName`.
+Select `File` -> `Swift Packages` -> `Add Package Dependency` and enter `https://github.com/CypherPoet/SwiftUIThemeColorUtils`.
 
 
 ### Swift Package Manager Projects
 
-You can add `MyPackageName` as a package dependency in your `Package.swift` file:
+You can add `CypherPoetSwiftUIThemeColorUtils` as a package dependency in your `Package.swift` file:
 
 ```swift
 let package = Package(
     //...
     dependencies: [
         .package(
-            name: "MyPackageName",
-            url: "https://github.com/CypherPoet/MyLibraryName",
+            name: "CypherPoetSwiftUIThemeColorUtils",
+            url: "https://github.com/CypherPoet/SwiftUIThemeColorUtils",
             .upToNextMinor(from: "0.1.0")
         ),
     ],
@@ -63,7 +63,7 @@ let package = Package(
 
 🔑 UNCOMMENT IF REPO NAME MATCHES THE LIBRARY NAME 👇
 
-From there, refer to `MyLibraryName` as a "target dependency" in any of _your_ package's targets that need it.
+From there, refer to `SwiftUIThemeColorUtils` as a "target dependency" in any of _your_ package's targets that need it.
 
 
 ```swift
@@ -71,7 +71,7 @@ targets: [
     .target(
         name: "YourLibrary",
         dependencies: [
-          "MyLibraryName",
+          "SwiftUIThemeColorUtils",
         ],
         ...
     ),
@@ -83,7 +83,7 @@ targets: [
 
 <!-- 🔑 UNCOMMENT IF REPO NAME DOESN'T MATCH THE LIBRARY NAME 👇 -->
 
-From there, refer to the `MyLibraryName` "product" delivered by the `MyPackageName` "package" inside of any of your project's target dependencies:
+From there, refer to the `SwiftUIThemeColorUtils` "product" delivered by the `CypherPoetSwiftUIThemeColorUtils` "package" inside of any of your project's target dependencies:
 
 ```swift
 targets: [
@@ -91,8 +91,8 @@ targets: [
         name: "YourLibrary",
         dependencies: [
             .product(
-                name: "MyLibraryName",
-                package: "MyPackageName"
+                name: "SwiftUIThemeColorUtils",
+                package: "CypherPoetSwiftUIThemeColorUtils"
             ),
         ],
         ...
@@ -101,7 +101,7 @@ targets: [
 ]
 ```
 
-Then simply `import MyLibraryName` wherever you’d like to use it.
+Then simply `import SwiftUIThemeColorUtils` wherever you’d like to use it.
 
 
 ## Usage
@@ -116,7 +116,7 @@ Then simply `import MyLibraryName` wherever you’d like to use it.
 
 ## Contributing
 
-Contributions to `MyPackageName` are most welcome. Check out some of the [issue templates](./.github/ISSUE_TEMPLATE/) for more info.
+Contributions to `CypherPoetSwiftUIThemeColorUtils` are most welcome. Check out some of the [issue templates](./.github/ISSUE_TEMPLATE/) for more info.
 
 
 
@@ -136,13 +136,4 @@ For now, the best way to view the docs is to open the project in Xcode and run t
 
 ## 🏷 License
 
-`MyPackageName` is available under the MIT license. See the [LICENSE file](./LICENSE) for more info.
-
-
-## Steps For Using This Template
-
-- [ ] Rename instances of `MyLibraryName` to the library's product name.
-- [ ] Rename files and directories with names of `MyLibraryName` to the library's product name.
-- [ ] Rename instances of `MyPackageName` to the library's Swift package name.
-- [ ] Update supported platforms as appropriate.
-- [ ] Delete this section.
+`CypherPoetSwiftUIThemeColorUtils` is available under the MIT license. See the [LICENSE file](./LICENSE) for more info.
