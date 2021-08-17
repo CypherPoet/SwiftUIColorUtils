@@ -1,4 +1,4 @@
-# ``SwiftUIThemeColorUtils``
+# ``SwiftUIColorUtils``
 
 Utilities for structuring and using theme colors in SwiftUI applications
 

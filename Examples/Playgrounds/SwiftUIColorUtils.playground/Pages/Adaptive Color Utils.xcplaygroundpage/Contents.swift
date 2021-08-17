@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 
 import SwiftUI
-import SwiftUIThemeColorUtils
+import SwiftUIColorUtils
 import PlaygroundSupport
 
 

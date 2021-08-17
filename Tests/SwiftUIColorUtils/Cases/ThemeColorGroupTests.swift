@@ -1,6 +1,6 @@
 import XCTest
 import SwiftUI
-import SwiftUIThemeColorUtils
+import SwiftUIColorUtils
 
 
 class ThemeColorGroupTests: XCTestCase {

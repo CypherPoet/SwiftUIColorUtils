@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "CypherPoetSwiftUIThemeColorUtils",
+    name: "CypherPoetSwiftUIColorUtils",
     defaultLocalization: "en",
     platforms: [
         .iOS(.v15),
@@ -15,9 +15,9 @@ let package = Package(
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "SwiftUIThemeColorUtils",
+            name: "SwiftUIColorUtils",
             targets: [
-                "SwiftUIThemeColorUtils",
+                "SwiftUIColorUtils",
             ]
         ),
     ],
@@ -29,20 +29,20 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "SwiftUIThemeColorUtils",
+            name: "SwiftUIColorUtils",
             dependencies: [
             ],
-            path: "Sources/SwiftUIThemeColorUtils/",
+            path: "Sources/SwiftUIColorUtils/",
             resources: [
                 .process("Resources"),
             ]
         ),
         .testTarget(
-            name: "SwiftUIThemeColorUtilsTests",
+            name: "SwiftUIColorUtilsTests",
             dependencies: [
-                "SwiftUIThemeColorUtils",
+                "SwiftUIColorUtils",
             ],
-            path: "Tests/SwiftUIThemeColorUtils/",
+            path: "Tests/SwiftUIColorUtils/",
             exclude: [
                 "Resources/README.md",
                 "Toolbox/README.md",
