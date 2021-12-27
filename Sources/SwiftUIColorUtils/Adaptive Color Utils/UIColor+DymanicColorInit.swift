@@ -1,4 +1,4 @@
-#if canImport(UIKit)
+#if os(watchOS) || os(iOS) || os(tvOS)
 
 import UIKit
 
