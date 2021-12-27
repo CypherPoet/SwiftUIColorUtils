@@ -2,6 +2,8 @@ import SwiftUI
 
 
 public struct ThemeColorGroup {
+    public let id = UUID()
+
     public var primary: Color
     public var secondary1: Color
     public var secondary2: Color
@@ -31,6 +33,8 @@ public struct ThemeColorGroup {
     }
 }
 
+extension ThemeColorGroup: Identifiable {}
+extension ThemeColorGroup: Equatable {}
 
 
 extension ThemeColorGroup {
