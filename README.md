@@ -103,9 +103,6 @@ targets: [
 Then simply `import SwiftUIColorUtils` wherever you’d like to use it.
 
 
-## Usage
-
-
 ## Contributing
 
 Contributions to `SwiftUI Color Utils` are most welcome. Check out some of the [issue templates](./.github/ISSUE_TEMPLATE/) for more info.
