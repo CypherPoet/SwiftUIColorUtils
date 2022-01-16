@@ -41,13 +41,14 @@ extension Color {
 
 
 
+
 #if DEBUG
 
 // MARK: - Previews
 
 import SwiftUI
 
-public struct DynamicNSColorInit_Previews: PreviewProvider {
+struct DynamicNSColorInit_Previews: PreviewProvider {
     
     public static var previews: some View {
         

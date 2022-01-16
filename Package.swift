@@ -9,8 +9,8 @@ let package = Package(
     platforms: [
         .iOS(.v14),
         .macOS(.v11),
-        .tvOS(.v13),
-        .watchOS(.v6),
+        .tvOS(.v14),
+        .watchOS(.v7),
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
@@ -37,6 +37,8 @@ let package = Package(
                 .process("Resources"),
             ]
         ),
+        
+        
         .testTarget(
             name: "SwiftUIColorUtilsTests",
             dependencies: [

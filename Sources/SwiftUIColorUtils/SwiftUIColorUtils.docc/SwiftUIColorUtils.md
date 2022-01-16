@@ -12,3 +12,11 @@ Utilities for structuring and using theme colors in SwiftUI applications
 ### Essentials
 
 - ``ThemeColorGroup``
+
+
+### Adaptive Color Initializers
+
+
+### Color Palette Utilities
+
+- ``ColorPalette``
