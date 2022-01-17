@@ -52,7 +52,7 @@ let package = Package(
         .package(
             name: "CypherPoetSwiftUIColorUtils",
             url: "https://github.com/CypherPoet/SwiftUIColorUtils",
-            .upToNextMinor(from: "0.2.0")
+            .upToNextMinor(from: "0.3.0")
         ),
     ],
     //...
@@ -60,11 +60,11 @@ let package = Package(
 ```
 
 
-<!-- 🔑 UNCOMMENT IF REPO NAME MATCHES THE LIBRARY NAME 👇 -->
+<!-- 🔑 UNCOMMENT THE INSTRUCTIONS BELOW IF THE GITHUB REPO NAME MATCHES THE PACKAGE NAME 👇 -->
 
+<!--
 
 From there, refer to `SwiftUIColorUtils` as a "target dependency" in any of _your_ package's targets that need it.
-
 
 ```swift
 targets: [
@@ -79,26 +79,29 @@ targets: [
 ]
 ```
 
+-->
 
-<!-- 🔑 UNCOMMENT IF REPO NAME DOESN'T MATCH THE LIBRARY NAME 👇 -->
 
-<!--From there, refer to the `SwiftUIColorUtils` "product" delivered by the `CypherPoetSwiftUIColorUtils` "package" inside of any of your project's target dependencies:-->
-<!---->
-<!--```swift-->
-<!--targets: [-->
-<!--    .target(-->
-<!--        name: "YourLibrary",-->
-<!--        dependencies: [-->
-<!--            .product(-->
-<!--                name: "SwiftUIColorUtils",-->
-<!--                package: "CypherPoetSwiftUIColorUtils"-->
-<!--            ),-->
-<!--        ],-->
-<!--        ...-->
-<!--    ),-->
-<!--    ...-->
-<!--]-->
-<!--```-->
+<!-- 🔑 UNCOMMENT THE INSTRUCTIONS BELOW IF THE GITHUB REPO NAME DOESN'T MATCH THE PACKAGE NAME 👇 -->
+
+
+From there, refer to the `SwiftUIColorUtils` "product" delivered by the `CypherPoetSwiftUIColorUtils` "package" inside of any of your project's target dependencies:
+
+```swift
+targets: [
+    .target(
+        name: "YourLibrary",
+        dependencies: [
+            .product(
+                name: "SwiftUIColorUtils",
+                package: "CypherPoetSwiftUIColorUtils"
+            ),
+        ],
+        ...
+    ),
+    ...
+]
+```
 
 Then simply `import SwiftUIColorUtils` wherever you’d like to use it.
 
