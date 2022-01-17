@@ -22,7 +22,6 @@ extension ColorPalette.SemanticName: ExpressibleByStringLiteral {
 
 
 
-
 extension ColorPalette.SemanticName {
     
     public static let mainBackground: Self = "Background - Main"
