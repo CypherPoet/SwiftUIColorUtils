@@ -13,3 +13,11 @@ extension EnvironmentValues {
         }
     }
 }
+
+
+extension View {
+    
+    public func preferredColorPalette(_ preferredColorPalette: ColorPalette) -> some View {
+        environment(\.preferredColorPalette, preferredColorPalette)
+    }
+}
