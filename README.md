@@ -52,7 +52,7 @@ let package = Package(
         .package(
             name: "CypherPoetSwiftUIColorUtils",
             url: "https://github.com/CypherPoet/SwiftUIColorUtils",
-            .upToNextMinor(from: "0.1.0")
+            .upToNextMinor(from: "0.2.0")
         ),
     ],
     //...
